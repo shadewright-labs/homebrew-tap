@@ -17,7 +17,7 @@ A general Homebrew tap (`brew tap shadewright-labs/tap`) for the command line to
 - Never execute downloaded content. Release assets and `checksums.txt` are data: validate versions (`^[0-9]+\.[0-9]+\.[0-9]+$`) and digests (64 lower-case hex) before use, and build URLs from validated parts only.
 - Formulas pin sha256 of every archive. Signatures and provenance (`gh attestation verify`) are documented in each tool's repository; do not claim the formula verifies more than sha256.
 - Workflows: `permissions: {}` at the top, the minimum per job, only `GITHUB_TOKEN` (no secrets, no PAT), actions pinned by full commit SHA with the version in a comment, no untrusted input (release names, tags, PR text) interpolated into shell. Pull requests opened with `GITHUB_TOKEN` do not trigger workflows, hence `bump.yml` starts `check.yml` and `pr-title.yml` by hand.
-- A formula exists only for a release with binaries. Never commit a placeholder formula (it would fail to install). Sablecourt and Nightloom get one when their first release is published.
+- A formula exists only for a release with binaries. Never commit a placeholder formula (it would fail to install). Sablecourt gets one when its first release is published.
 - Adding a tool means a `tools.json` entry; do not write a formula by hand or add per-tool code paths to the script.
 - Everything committed is public and in English. No emails, local paths, personal IDs or secrets.
 

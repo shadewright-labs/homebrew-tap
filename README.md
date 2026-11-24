@@ -8,7 +8,6 @@ Homebrew formulae for the command line tools of [Shadewright Labs](https://githu
 | --- | --- | --- |
 | Shadewright | `kubectl-shadewright` (kubectl plugin) | Available. Installs from the signed release archives of [shadewright-labs/shadewright](https://github.com/shadewright-labs/shadewright). |
 | Sablecourt | none | Not available yet. Sablecourt is a private preview with no release, so there is no formula and `brew install shadewright-labs/tap/sablecourt` fails with "No available formula". This table changes when the first release is published. |
-| Nightloom | none | Not published. |
 
 ## Install
 
